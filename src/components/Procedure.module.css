@@ -1,0 +1,65 @@
+.container {
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 30px auto 140px;
+    grid-gap: 0px 10px;
+    padding: 2px;
+    font-size: 0.9em;
+    color: #444;
+}
+.containerNoImage {
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-gap: 0px 10px;
+    padding: 2px;
+    font-size: 0.9em;
+    color: #444;
+}
+.containerVertical {
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 0px;
+    padding: 2px;
+    font-size: 0.9em;
+    color: #444;
+}
+.contentVerticalIndex {
+    position: relative;
+}
+.contentIndex {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+}
+.contentIndex div, .contentVerticalIndex div{
+    border: 1px solid #d9d9d9; /*#b3b3b3;*/
+    font-size: 1em;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    line-height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #d9d9d9;
+}
+.contentTexts {
+    background-color: transparent;
+    padding-top: 3px;
+}
+.contentImageContainer {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+}
+.contentImage {
+    width: 140px;
+    height: 105px;
+}

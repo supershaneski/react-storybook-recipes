@@ -1,0 +1,18 @@
+.container {
+    background-color: white;
+    position: relative;
+}
+.listItem {
+    border-bottom: 1px dotted #d9e6f2; /*#ecf2f9; /*#d9e6f2;*/
+}
+.listItem:last-child {
+    border-bottom: 0px;
+}
+.noDataContainer {
+    background-color: white;
+    position: relative;
+    color: white;
+}
+.noDataContainer::before {
+    content: ".";
+}

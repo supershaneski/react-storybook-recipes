@@ -1,4 +1,17 @@
+react-storybook-recipe
+================
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Description
+This is a sample exercise for [Storybook](https://storybook.js.org/docs/basics/introduction/).
+
+Basically, the application is a recipe book of dishes.
+I want to apply what I am learning to some real-world *(well, kinda)* project and I do not want to make another Todo app, which is the same topic already for the [Storybook tutorial](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/).
+
+Another reason why I chose a recipe book because I also want to make it from the ground up like a real [Component-Driven Development](https://www.learnstorybook.com/intro-to-storybook/react/en/simple-component/) (CDD) project. I like cooking so I can easily visualize it without even making any mock up plans.
+
+_Note: This is a work in progress. The reason I am committing it in stages is to document the progress and demonstrate working through CDD methodology._
 
 ## Available Scripts
 
@@ -11,6 +24,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+### `npm run storybook`
+
+Start the Storybook component explorer on port 9009.
 
 ### `npm test`
 

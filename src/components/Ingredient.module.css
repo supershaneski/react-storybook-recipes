@@ -1,0 +1,23 @@
+.container {
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 120px;
+    grid-gap: 0px 0px;
+    padding: 2px;
+    font-size: 0.9em;
+    color: #444;
+}
+.container:hover {
+    background-color: #F6F9FC;
+}
+.ingredient {
+    position: relative;
+    /*text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;*/
+}
+.amount {
+    position: relative;
+    text-align: right;
+}
