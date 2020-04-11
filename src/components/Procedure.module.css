@@ -21,9 +21,11 @@
 .containerVertical {
     background-color: white;
     position: relative;
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px 0px;
+    grid-gap: 10px 0px;*/
+    width: 250px;
+    display: inline-block;
     padding: 2px;
     font-size: 0.9em;
     color: #444;

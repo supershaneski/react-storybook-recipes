@@ -1,3 +1,38 @@
 .container {
     background-color: #fff;
 }
+
+.listItem {
+    border-bottom: 1px dotted #d9e6f2;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.listItem:last-child {
+    border-bottom: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.listVerticalItem {
+    border-right: 1px dotted #d9e6f2;
+    padding-right: 5px;
+    margin-right: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.listVerticalItem:last-child {
+    border-right: 0px;
+    padding-right: 5px;
+    margin-right: 0px;
+}
+
+.noDataContainer {
+    background-color: white;
+    position: relative;
+    color: white;
+}
+.noDataContainer::before {
+    content: ".";
+}
