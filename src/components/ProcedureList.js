@@ -13,8 +13,9 @@ export default function ProcedureList({ mode, data }) {
             data.map((item, index) => {
                 const image = (flagImageExist && item.image === '')?'/blank.gif':item.image;
                 const itemClass = (mode === 'VERTICAL')?styles.listVerticalItem:styles.listItem;
+                const sindex = String(index + 1);
                 return (
-                    <Procedure className={itemClass} key={index} mode={mode} data={{...item, image: image, index: (index + 1)}} />
+                    <Procedure className={itemClass} key={index} mode={mode} data={{...item, image: image, index: sindex}} />
                 )
             })
         }

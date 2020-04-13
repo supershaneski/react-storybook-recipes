@@ -20,9 +20,12 @@ export default function IngredientsPanel({ lang, data }) {
 
 IngredientsPanel.defaultProps = {
     lang: 'en',
+    data: []
 }
 
 IngredientsPanel.propTypes = {
-    data: PropTypes.arrayOf(IngredientList.propTypes.data).isRequired,
+    //data: PropTypes.arrayOf(IngredientList.propTypes.data).isRequired,
+    //data: PropTypes.arrayOf(IngredientList.propTypes.data),
+    data: IngredientList.propTypes.data,
     lang: PropTypes.string,
 };

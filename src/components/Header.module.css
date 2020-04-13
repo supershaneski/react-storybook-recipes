@@ -1,0 +1,17 @@
+.container {
+    background-color: #1a344c;
+    position: relative;
+    /*width: 100%;*/
+    padding: 10px 5px;
+    max-width: 1020px;
+    min-width: 620px;
+    margin: 0px auto;
+}
+.container h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+}

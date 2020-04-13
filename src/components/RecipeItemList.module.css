@@ -1,0 +1,44 @@
+.container {
+    background-color: white;
+    position: relative;
+}
+.containerVertical {
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 230px;
+    grid-gap: 1px 1px;
+}
+.containerVertical2 {
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 140px;
+    grid-gap: 1px 1px;
+}
+.itemList {
+    /*background-color: yellow;*/
+    border-bottom: 1px dotted #d9e6f2;
+}
+.containerVertical .verticalItem {
+    /*background-color: pink;*/
+    background-color: transparent;
+    display: inline-block;
+    width: 200px;
+    height: 230px;
+    margin: 2px;
+    border-right: 1px dotted #d9e6f2;
+    overflow: hidden;
+}
+.containerVertical2 .verticalItem {
+    /*background-color: cyan;*/
+    background-color: transparent;
+    display: inline-block;
+    width: 200px;
+    height: 140px;
+    margin: 2px;
+    border-right: 1px dotted #d9e6f2;
+    overflow: hidden;
+}

@@ -5,11 +5,12 @@ import styles from './ProceduresPanel.module.css';
 
 export default function ProceduresPanel({ lang, mode, data }) {
     const title = (lang === 'en')?'Directions':'作り方';
+    /*
     if(data.length === 0) {
         return (
             <div className={styles.noDataContainer}></div>
         )
-    }
+    }*/
     return (
         <div className={styles.container}>
             <div className={styles.header}><h4>{ title }</h4></div>
@@ -24,7 +25,9 @@ ProceduresPanel.defaultProps = {
 }
 
 ProceduresPanel.propTypes = {
-    data: PropTypes.arrayOf(ProcedureList.propTypes.data).isRequired,
-    mode: PropTypes.string,
     lang: PropTypes.string,
+    mode: PropTypes.string,
+    //data: PropTypes.arrayOf(ProcedureList.propTypes.data).isRequired,
+    //data: ProcedureList.propTypes.data.isRequired,
+    data: ProcedureList.propTypes.data,
 };

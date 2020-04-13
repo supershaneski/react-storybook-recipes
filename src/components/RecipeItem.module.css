@@ -1,0 +1,109 @@
+.container {
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 5px;
+    padding: 5px;
+    max-height: 150px;
+    cursor: pointer;
+}
+.container:hover {
+    background-color: #F6F9FC;
+}
+
+.title {
+    grid-column: 1 / 3;
+    background-color: transparent;
+    padding-bottom: 3px;  
+}
+.title h4 {
+    display: inline;
+    font-size: 0.8em;
+    color: #548ec4;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+.title h4:hover {
+    text-decoration: underline;
+}
+
+.containerVertical {
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.containerVertical:hover {
+    background-color: #F6F9FC;
+}
+.titleVertical {
+    background-color: transparent;
+    padding-bottom: 3px;  
+}
+.titleVertical h4 {
+    /*font-size: 0.9em;*/
+    font-size: 0.7em;
+    color: #548ec4;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.titleVertical h4:hover {
+    text-decoration: underline;
+}
+
+.container .image {
+    background-color: transparent;
+    text-align: center;
+}
+.container .image img {
+    width: 130px;
+    /*max-height: 100px;*/
+}
+
+.containerVertical .image {
+    background-color: transparent;
+    text-align: center;
+}
+.containerVertical .image img {
+    /*width: 130px;*/
+    height: 100px;
+}
+
+.container .texts {
+    background-color: transparent;
+    min-height: 120px;
+    overflow: hidden;
+}
+.container .texts p {
+    background-color: transparent;
+    font-size: 0.8em;
+    color: #444;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.containerVertical .texts {
+    background-color: transparent;
+    overflow: hidden;
+}
+.containerVertical .texts p {
+    background-color: transparent;
+    /*font-size: 0.9em;*/
+    font-size: 0.7em;
+    color: #444;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

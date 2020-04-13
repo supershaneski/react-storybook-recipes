@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import styles from './IngredientList.module.css';
 import Ingredient from './Ingredient';
 
-export default function IngredientList({ data: ingredients }) {
+export default function IngredientList({ data }) {
 
-    if(ingredients.length === 0) {
+    if(data.length === 0) {
         return (
             <div className={styles.noDataContainer}></div>
         )
@@ -14,7 +14,7 @@ export default function IngredientList({ data: ingredients }) {
     return (
         <div className={styles.container}>
         {
-            ingredients.map((item, index) => 
+            data.map((item, index) => 
                 <Ingredient className={styles.listItem} key={index} data={{...item}}  />
             )
         }
@@ -23,7 +23,6 @@ export default function IngredientList({ data: ingredients }) {
 }
 
 IngredientList.propTypes = {
-    data: PropTypes.shape({
-      ingredients: PropTypes.arrayOf(Ingredient.propTypes.data).isRequired,
-    }),
+    //data: PropTypes.arrayOf(Ingredient.propTypes.data).isRequired,
+    data: PropTypes.arrayOf(Ingredient.propTypes.data),
 };

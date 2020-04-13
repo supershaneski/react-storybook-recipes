@@ -1,0 +1,40 @@
+.container {
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.title {
+    background-color: transparent;
+    position: relative;
+}
+.title h4 {
+    font-size: 1.1em;
+    margin: 0px;
+    padding: 0px;
+    color: #990F3D;
+}
+.title h1 {
+    font-size: 1.8em;
+    margin: 0px;
+    padding: 0px;
+    color: #f48bae;
+}
+
+.texts {
+    background-color: transparent;
+    position: relative;
+}
+.texts p {
+    color: #999;
+}
+
+.banner {
+    background-color: transparent;
+    position: relative;
+}
+.banner img{
+    position: relative;
+    width: 100%;
+}

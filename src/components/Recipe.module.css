@@ -1,0 +1,68 @@
+.container {
+    background-color: white;
+    position: relative;
+}
+.title {
+    background-color: transparent;
+    position: relative;
+    padding: 15px 0px;
+}
+.title h4 {
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    color: #548ec4; /*#b3cde5;*/
+    font-size: 1.5em;
+    text-align: center;
+}
+.descriptionPanel {
+    background-color: transparent;
+    position: relative;
+    padding: 10px;
+}
+.ingredientsPanel {
+    background-color: transparent;
+    position: relative;
+    padding: 10px;
+}
+.proceduresPanel {
+    background-color: transparent;
+    position: relative;
+    padding: 10px;
+}
+
+.containerColumn {
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'description ingredients ingredients'
+        'procedures procedures procedures';
+    grid-gap: 10px;
+    padding: 10px;
+}
+.titleColumn {
+    background-color: transparent;
+    grid-area: header;
+    padding: 15px 0px;
+}
+.titleColumn h4 {
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    color: #548ec4; /*#b3cde5;*/
+    font-size: 1.5em;
+    text-align: center;
+}
+.descriptionPanelColumn {
+    background-color: transparent;
+    grid-area: description;
+}
+.ingredientsPanelColumn {
+    background-color: transparent;
+    grid-area: ingredients;
+}
+.proceduresPanelColumn {
+    background-color: transparent;
+    grid-area: procedures;
+}

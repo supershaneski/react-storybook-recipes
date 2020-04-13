@@ -33,7 +33,7 @@ const noImageProceduresData = [
     { ...procedureData, image: '' },
     { ...procedureData, image: '' },
 ];
-export const NotImageExist = () => {
+export const NoImageExist = () => {
     return <ProcedureList data={noImageProceduresData} />
 };
 

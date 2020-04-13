@@ -1,0 +1,27 @@
+.container {
+    background-color: white;
+    position: relative;
+    font-size: 0.9em;
+    color: #444;
+}
+.imageContent {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+.imageContent img{
+    min-height: 150px;
+}
+.textsContent {
+    background-color: transparent;
+    position: relative;
+    padding: 10px 5px;
+    text-indent: 1em;
+}
+.textsContent::first-letter {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #346898;
+}
