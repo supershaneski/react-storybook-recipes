@@ -24,6 +24,15 @@ SpecialSection component using RecipeItem:
 The same SpecialSection component in Vertical mode:
 ![SpecialSection Vertical](docs/screenshot03.png)
 
+Home page:
+![Home](docs/home.png)
+
+Recipe page - Default View:
+![Recipe Default View](docs/recipe1.png)
+
+Recipe page - Mobile View:
+![Recipe Mobile View](docs/recipe2.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
