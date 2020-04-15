@@ -1,0 +1,30 @@
+{
+    "id": "garlic-chicken",
+    "title": "Garlic Chicken with Green Onions",
+    "slug": "garlic-chicken",
+    "version": "0.1.0",
+    "date": "2020-04-01",
+    "image": "/pork-moyashi-negi.jpg",
+    "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor impsum este lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "description": {
+        "image": "/pork-moyashi-negi.jpg",
+        "texts": "Dolor impsum este lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        "title": "Garlic Chicken with Green Onions"
+    },
+    "ingredients": [
+        { "text": "Chicken breast", "amount": "1 pc, 200g" },
+        { "text": "Garlic", "amount": "1 clove" },
+        { "text": "Green onions, chopped", "amount": "1 cup" },
+        { "text": "Sesame oil", "amount": "3 Tbsp" },
+        { "text": "Salt and pepper", "amount": "to taste" }
+    ],
+    "procedures": [
+        { "index": "1", "image": "", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "2", "image": "", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "3", "image": "", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "4", "image": "", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "5", "image": "", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "6", "image": "", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "7", "image": "", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
+    ]
+}

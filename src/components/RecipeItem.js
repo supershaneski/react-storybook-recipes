@@ -1,35 +1,62 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+//import { Link } from 'react-router-dom';
+//import Lib from '../lib/utils';
 import styles from './RecipeItem.module.css';
-import Lib from '../lib/utils';
 
-export default function RecipeItem({ className, mode, data: { id, title, image, texts }, onClick  }) {
-    
-    const txtObj = Lib.checkCaptionString(texts);
-    const stexts = (txtObj.strlength > 150)?texts.substr(0, 150) + '...':texts;
+export default function RecipeItem({ className, mode, data: { id, title, image, texts }  }) {
     
     var classList = [styles.container];
     var classTitle = styles.title;
+    
+    var stexts = texts;
     if(mode === 'VERTICAL') {
         classList = [styles.containerVertical];
         classTitle = styles.titleVertical;
+        stexts = (texts.length > 64)?texts.substr(0, 64)+"...":texts;
     }
-    
+
     if(className.length > 0) {
         classList.push(className);
     }
+
     const classContainer = classList.join(' ');
 
+    const url = '/recipe/' + id;
+
+    //const flagStoryBook = Lib.isStoryBookRunning();
+    
+    const TitleComponent = () => {
+        /*if(flagStoryBook) {
+            return <a href={url}><h4>{ title }</h4></a>
+        } else {
+            return <Link to={url}><h4>{ title }</h4></Link>
+        }*/
+        return <a href={url}><h4>{ title }</h4></a>
+    }
+
+    const ImageComponent = () => {
+        /*if(flagStoryBook) {
+            return <a href={url}><img alt={id} src={image} /></a>
+        } else {
+            return <Link to={url}><img alt={id} src={image} /></Link>
+        }*/
+        return <a href={url}><img alt={id} src={image} /></a>
+    }
+
     return (
-        <div className={classContainer} onClick={() => onClick(id)}>
+        <div className={classContainer}>
             <div className={classTitle}>
-                <h4>{ title }</h4>
-            </div>
-            <div className={styles.image}>
-                <img src={image} />
+                <TitleComponent />
             </div>
             {
-                stexts && 
+                image &&
+                <div className={styles.image}>
+                    <ImageComponent />
+                </div>
+            }
+            {
+                texts && 
                 <div className={styles.texts}>
                     <p>
                     {
@@ -60,5 +87,5 @@ RecipeItem.propTypes = {
         image: PropTypes.string,
         texts: PropTypes.string.isRequired,
     }),
-    onClick: PropTypes.func,
+    //onClick: PropTypes.func,
 };

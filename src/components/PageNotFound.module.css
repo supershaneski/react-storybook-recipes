@@ -1,0 +1,36 @@
+.container {
+    background-color: #fff;
+    position: relative;
+}
+.header {
+    background-color: #1a344c;
+    position: relative;
+}
+.main {
+    background-color: transparent;
+    position: relative;
+    min-height: 300px;
+}
+.contents {
+    background-color: white;
+    position: relative;
+    max-width: 1020px;
+    min-width: 620px;
+    margin: 0px auto;
+    padding-top: 20px;
+    text-align: center;
+}
+.contents h4, .contents p {
+    margin: 0px;
+    padding: 5px;
+}
+.contents h4 {
+    color: #1a344c;
+}
+.contents p {
+    color: #444;
+}
+.footer {
+    background-color: magenta;
+    position: relative;
+}

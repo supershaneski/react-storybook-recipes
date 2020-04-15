@@ -14,20 +14,46 @@ export default function Procedure({ className, mode, data: { index, texts, image
         containerClass.push(className);
     }
     const containerClassName = containerClass.join(' ');
+    
+    const MainContent = () => {
+        if(mode === 'VERTICAL') {
+            return (
+                <>
+                    {
+                        image && 
+                        <div className={styles.contentImageContainer}>
+                            <img alt={image.replace('/','')} className={styles.contentImage} src={image} />
+                        </div>
+                    }
+                    <div className={styles.contentTexts}>
+                        { texts }
+                    </div>                    
+                </>
+            )
+        } else {
+            return (
+                <>
+                    <div className={styles.contentTexts}>
+                    { texts }
+                    </div>
+                    {
+                        image && 
+                        <div className={styles.contentImageContainer}>
+                            <img alt={image.replace('/','')} className={styles.contentImage} src={image} />
+                        </div>
+                    }
+                </>
+                
+            )
+        }
+    }
+
     return (
         <div className={containerClassName}>
             <div className={styles.contentVerticalIndex}>
                 <div>{ index }</div>
             </div>
-            <div className={styles.contentTexts}>
-                { texts }
-            </div>
-            {
-                image && 
-                <div className={styles.contentImageContainer}>
-                    <img alt={image.replace('/','')} className={styles.contentImage} src={image} />
-                </div>
-            }
+            <MainContent />
         </div>
     )
 }

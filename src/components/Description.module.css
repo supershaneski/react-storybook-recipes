@@ -10,6 +10,7 @@
     justify-content: center;
 }
 .imageContent img{
+    max-width: 300px;
     min-height: 150px;
 }
 .textsContent {
@@ -17,11 +18,4 @@
     position: relative;
     padding: 10px 5px;
     text-indent: 1em;
-}
-.textsContent::first-letter {
-    text-transform: uppercase;
-    font-size: 1.1em;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: #346898;
 }

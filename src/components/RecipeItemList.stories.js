@@ -1,6 +1,7 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import RecipeItemList from './RecipeItemList';
-import { recipeItemData, actionsData } from './RecipeItem.stories';
+import { recipeItemData } from './RecipeItem.stories';
 
 export default {
     component: RecipeItemList,
@@ -8,12 +9,17 @@ export default {
     excludeStories: /.*Data$/,
 };
 
+//const textsData = 'Lorem ipsum dolor sit amet, consectetur adipiscing elie aliqua.';
 export const defaultRecipeItemsData = [
     { ...recipeItemData },
     { ...recipeItemData, id: 'cabbage-meatball', title: 'Cabbage and Meatballs', image: './cabbage-meatball.jpg' },
     { ...recipeItemData, id: 'beansprout-leek', title: 'Beansprout, Chinese leek and Egg', image: './moyashi-nira-tamago.jpg' },
     { ...recipeItemData, id: 'pork-beansprout', title: 'Pork and Beansprouts', image: './pork-moyashi-negi.jpg' },
 ];
+
+export const actionsData = {
+    onClick: action('onClick'),
+};
 
 export const Default = () => {
     return <RecipeItemList items={defaultRecipeItemsData} {...actionsData} />

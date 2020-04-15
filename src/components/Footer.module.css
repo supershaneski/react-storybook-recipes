@@ -1,0 +1,13 @@
+.container {
+    background-color: white;
+    position: relative;
+    padding: 15px 0px;
+}
+.contents {
+    background-color: transparent;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 0.7em;
+    color: #8db4d8;
+    text-align: center;
+}

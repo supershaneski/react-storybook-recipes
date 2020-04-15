@@ -15,8 +15,6 @@ export default function RecipeItemList({ mode, items, onClick }) {
         if(!items.some(item => {
             return item.texts.length > 0 
         })) {
-            // do nothing
-        //} else {
             classContainer = styles.containerVertical2;
         }
     }

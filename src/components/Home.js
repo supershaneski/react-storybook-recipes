@@ -1,68 +1,72 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import styles from './Home.module.css';
-
-import RecipeItemList from './RecipeItemList';
 import Header from './Header';
+import Footer from './Footer';
 import Featured from './Featured';
+import SpecialSection from './SpecialSection';
 
-export default function Home() {
-
-    // dummy
-    const textsData = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+export function Home(props) {
+    const mode = props.mode;
+    const featuredData = props.state.recipes.items.find(item => item.id === 'beef-roast-stew');
     
-    const featuredData = {
-        id: 'roast-lamb',
-        title: 'Heavenly Roast Lamb for Easter',
-        texts: textsData,
-        image: '/roast-lamb.jpg',
-        updatedAt: new Date(2020, 0, 1, 9, 0),
-    };
+    const defaultRecipeItemsData = props.state.recipes.items.filter(item => item.id !== 'beef-roast-stew');
+    const popularRecipeItemsData = props.state.recipes.items.filter((item, index) => item.id !== 'beef-roast-stew' && index < 3);
+    const noTextsRecipeItemsData = props.state.recipes.items.filter(item => item.id !== 'beef-roast-stew')
+        .map(item => {
+            return {
+                ...item,
+                texts: '',
+            }
+        });
     
-    const recipeItemData = {
-        id: 'cabbage-sausage',
-        title: 'Cabbage, Sausage and Egg Stir-fry',
-        image: '/cabbage-sausage-egg-saute.jpg',
-        texts: textsData,
-        updatedAt: new Date(2020, 0, 1, 9, 0),
-    };
-    const defaultRecipeItemsData = [
-        { ...recipeItemData },
-        { ...recipeItemData, id: 'cabbage-meatball', title: 'Cabbage and Meatballs', image: './cabbage-meatball.jpg' },
-        { ...recipeItemData, id: 'beansprout-leek', title: 'Beansprout, Chinese leek and Egg', image: './moyashi-nira-tamago.jpg' },
-        { ...recipeItemData, id: 'pork-beansprout', title: 'Pork and Beansprouts', image: './pork-moyashi-negi.jpg' },
-    ];
-    const noTextsRecipeItemsData = [
-        { ...recipeItemData, texts: '', },
-        { ...recipeItemData, texts: '', id: 'cabbage-meatball', title: 'Cabbage and Meatballs', image: './cabbage-meatball.jpg' },
-        { ...recipeItemData, texts: '', id: 'beansprout-leek', title: 'Beansprout, Chinese leek and Egg', image: './moyashi-nira-tamago.jpg' },
-        { ...recipeItemData, texts: '', id: 'pork-beansprout', title: 'Pork and Beansprouts', image: './pork-moyashi-negi.jpg' },
-    ];
+    const classMainContainer = (mode === 'MOBILE')?styles.mainContents:styles.mainContentsDef;
+    const classFeatured = (mode === 'MOBILE')?styles.featured:styles.featuredDef;
+    const classMainRecipes = (mode === 'MOBILE')?styles.mainRecipes:styles.mainRecipesDef;
+    const classListRecipes = (mode === 'MOBILE')?styles.listRecipes:styles.listRecipesDef;
+    const classSideRecpes = (mode === 'MOBILE')?styles.sideRecipes:styles.sideRecipesDef;
     
-    const handleClick = (id) => {
-        console.log("click", id);
-    }
-
     return (
         <div className={styles.container}>
             <div className={styles.headerContents}>
-                <Header title="My Recipes" />
+                <Header mode={mode} title="My Recipes" />
             </div>
-            <main className={styles.mainContents}>
-
-                <div className="featured">
-                    <Featured contents={featuredData} onClick={id => handleClick(id)}/>
+            <main className={classMainContainer}>
+                <div className={classFeatured}>
+                    <Featured contents={featuredData}/>
                 </div>
-
-                <div className={styles.mainRecipes}>
-                    <RecipeItemList mode="VERTICAL" items={defaultRecipeItemsData} onClick={id => handleClick(id)} />
+                <div className={classMainRecipes}>
+                    <SpecialSection mode="VERTICAL" title="Season's Specials" items={defaultRecipeItemsData} />
                 </div>
-                <div className={styles.listRecipes}>
-                    <RecipeItemList mode="VERTICAL" items={noTextsRecipeItemsData} onClick={id => handleClick(id)} />
+                <div className={classListRecipes}>
+                    <SpecialSection align="center" mode="VERTICAL" title="Quick Recipes" items={noTextsRecipeItemsData} />
                 </div>
-                <div className={styles.sideRecipes}>
-                    <RecipeItemList items={defaultRecipeItemsData} onClick={id => handleClick(id)} />
+                <div className={classSideRecpes}>
+                    <SpecialSection 
+                        title="Popular Recipes" 
+                        items={popularRecipeItemsData} />
                 </div>                
             </main>
+            <div className={styles.footerContents}>
+                <Footer />
+            </div>
         </div>
     )
 }
+
+Home.defaultProps = {
+    mode: 'DEFAULT',
+}
+
+Home.propTypes = {
+    mode: PropTypes.string,
+}
+
+const mapStateToProps = (state) => {
+    return {
+        state,
+    }
+}
+
+export default connect(mapStateToProps)(Home);

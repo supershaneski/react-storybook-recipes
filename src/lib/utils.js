@@ -3,13 +3,13 @@ function lengthInUtf8Bytes(str) {
 	var m = encodeURIComponent(str).match(/%[89ABab]/g);
 	return str.length + (m ? m.length : 0);
 }
-
+/*
 function isJpnString( str ) {
 	var n = lengthInUtf8Bytes(str);
 	var k = str.length * 2;
 	return (n > k) ? true:false;
 }
-
+*/
 function checkCaptionString( str ) {
 	var l = str.length;
 	var n = lengthInUtf8Bytes(str);
@@ -40,7 +40,7 @@ function checkCaptionString( str ) {
 
 function componentToHex(c) {
     var hex = c.toString(16);
-    return hex.length == 1 ? "0" + hex : hex;
+    return hex.length === 1 ? "0" + hex : hex;
 }
   
 function rgbToHex(r, g, b) {
@@ -99,7 +99,15 @@ function getSquareNumber(num) {
     }
 }
 
+function isStoryBookRunning() {
+    // dirty checking whether storybook is running or not
+    const flagDot = (process.env.PUBLIC_URL.charAt(0).indexOf('.')>=0)?true:false;
+    const flagSocket = process.env.hasOwnProperty('WDS_SOCKET_HOST');
+    return flagDot && !flagSocket;
+} 
+
 export default {
+    isStoryBookRunning,
     shuffleArray,
     getSimpleId,
     getRandomInt,

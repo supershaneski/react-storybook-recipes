@@ -2,7 +2,6 @@
     background-color: white;
     position: relative;
     padding: 10px;
-    cursor: pointer;
 }
 
 .title {
@@ -22,6 +21,14 @@
     color: #f48bae;
 }
 
+.title a {
+    color: #f48bae;
+    text-decoration: none;
+}
+.title a:hover {
+    text-decoration: underline;
+}
+
 .texts {
     background-color: transparent;
     position: relative;
@@ -35,6 +42,11 @@
     position: relative;
 }
 .banner img{
+    border: 1px solid #fff;
     position: relative;
     width: 100%;
+}
+
+.banner a:hover img{
+    border: 1px solid #999;
 }

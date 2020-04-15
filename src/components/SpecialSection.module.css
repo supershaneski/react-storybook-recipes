@@ -1,0 +1,29 @@
+.container {
+    background-color: magenta;
+    position: relative;
+}
+
+.title {
+    background-color: #1a344c;
+    position: relative;
+    padding: 2px 0px 2px 5px;
+}
+.title h4{
+    margin: 0px;
+    padding: 0px 0px;
+    display: inline;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #fff;
+}
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+
+.items {
+    background-color: yellowgreen;
+    position: relative;
+}

@@ -1,0 +1,30 @@
+{
+    "id": "spinach-egg",
+    "title": "Egg and Spinach Saute",
+    "slug": "spinach-egg",
+    "version": "0.1.0",
+    "date": "2020-04-01",
+    "image": "/moyashi-nira-tamago.jpg",
+    "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor impsum este lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "description": {
+        "image": "/moyashi-nira-tamago.jpg",
+        "texts": "Dolor impsum este lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        "title": "Egg and Spinach Saute"
+    },
+    "ingredients": [
+        { "text": "Cabbage", "amount": "1 Head" },
+        { "text": "Sausage", "amount": "2 pcs" },
+        { "text": "Egg", "amount": "1 pc" },
+        { "text": "Soy sauce", "amount": "1 Tbsp" },
+        { "text": "Sake", "amount": "1 Tbsp" },
+        { "text": "Mirin", "amount": "1 Tbsp" },
+        { "text": "Cooking oil", "amount": "1 Tbsp" },
+        { "text": "Salt and pepper", "amount": "to taste" }
+    ],
+    "procedures": [
+        { "index": "1", "image": "/image1.jpg", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "2", "image": "/image2.jpg", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "3", "image": "/image3.jpg", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "4", "image": "/image4.jpg", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
+    ]
+}

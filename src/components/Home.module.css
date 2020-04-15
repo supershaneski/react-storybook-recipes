@@ -6,8 +6,11 @@
     background-color: #1a344c;
     position: relative;    
 }
-.mainContents {
-    /*background-color: lightgreen;*/
+.footerContents {
+    position: relative;    
+}
+
+.mainContentsDef {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 200px;
     grid-auto-rows: minmax(100px, auto);
@@ -17,17 +20,47 @@
     min-width: 620px;
     margin: 0px auto;
 }
-.mainRecipes {
+.featuredDef {
+    background-color: #fff;
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+.mainRecipesDef {
     background-color: #fff;
     grid-column: 1 / 4;
     grid-row: 2;
 }
-.listRecipes {
+.listRecipesDef {
     background-color: #fff;
     grid-row: 1 / 4;
 }
-.sideRecipes {
+.sideRecipesDef {
     background-color: #fff;
     grid-column: 1 / 4;
+    grid-row: 3;
+}
+
+.mainContents {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px 0px;
+    /*max-width: 1020px;*/
+    /*min-width: 620px;*/
+    margin: 0px auto;
+}
+.featured {
+    background-color: #fff;
+    grid-row: 1;
+}
+.mainRecipes {
+    background-color: #fff;
+    grid-row: 2;
+}
+.listRecipes {
+    background-color: #fff;
+    grid-row: 4;
+}
+.sideRecipes {
+    background-color: #fff;
     grid-row: 3;
 }

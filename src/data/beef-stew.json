@@ -1,0 +1,29 @@
+{
+    "id": "beef-stew",
+    "title": "Beef Stewed in Red Wine",
+    "slug": "beef-stew",
+    "version": "0.1.0",
+    "date": "2020-04-01",
+    "image": "/beef-stew.jpg",
+    "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor impsum este lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "description": {
+        "image": "/beef-stew.jpg",
+        "texts": "Dolor impsum este lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        "title": "Beef Stewed in Red Wine"
+    },
+    "ingredients": [
+        { "text": "Beef Shank", "amount": "1/2 kilo" },
+        { "text": "Potato", "amount": "2 pcs" },
+        { "text": "Carrot", "amount": "1/2 pc" },
+        { "text": "Bay leaves", "amount": "2 pcs" },
+        { "text": "Whole pepper", "amount": "1/4 cup" },
+        { "text": "Red wine", "amount": "1 glass" },        
+        { "text": "Olive oil", "amount": "2 Tbsp" },        
+        { "text": "Sea salt", "amount": "to taste" }
+    ],
+    "procedures": [
+        { "index": "1", "image": "/image1a.jpg", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "2", "image": "/image2a.jpg", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+        { "index": "3", "image": "/image3a.jpg", "texts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
+    ]
+}

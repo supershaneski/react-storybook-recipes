@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import styles from './Featured.module.css';
 
 export default function Featured({ contents: { id, title, texts, image }, onClick }) {
+    const url = '/recipe/' + id;
     return (
-        <div className={styles.container} onClick={() => onClick()}>
+        <div className={styles.container}>
             <div className={styles.title}>
                 <h4>Featured Recipe</h4>
-                <h1>{ title }</h1>
+                <a href={url}><h1>{ title }</h1></a>
             </div>
             <div className={styles.texts}>
                 <p>
@@ -15,7 +16,9 @@ export default function Featured({ contents: { id, title, texts, image }, onClic
                 </p>
             </div>
             <div className={styles.banner}>
-                <img src={image} />
+                <a href={url}>
+                    <img alt={id} src={image} />
+                </a>
             </div>            
         </div>
     )
