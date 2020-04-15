@@ -15,22 +15,22 @@ Another reason why I chose a recipe book because I also want to make it from the
 
 There are no events in the components. I started adding one but decided to remove it. There are still many things to study and I still have many questions of what kind of pattern/solution is apt to certain problems. Anyway, I will end this exercise at this point. I will probably make a Single Page App next to study user actions, etc. I made just two pages to use the components and redux to manage the recipe data.
 
-RecipeItem Basic component:
+RecipeItem Basic component:<br>
 ![RecipeItem Default](docs/screenshot01.png)
 
-SpecialSection component using RecipeItem:
+SpecialSection component using RecipeItem:<br>
 ![SpecialSection Default](docs/screenshot02.png)
 
-The same SpecialSection component in Vertical mode:
+The same SpecialSection component in Vertical mode:<br>
 ![SpecialSection Vertical](docs/screenshot03.png)
 
-Home page:
+Home page:<br>
 ![Home](docs/home.png)
 
-Recipe page - Default View:
+Recipe page - Default View:<br>
 ![Recipe Default View](docs/recipe1.png)
 
-Recipe page - Mobile View:
+Recipe page - Mobile View:<br>
 ![Recipe Mobile View](docs/recipe2.png)
 
 ## Available Scripts
